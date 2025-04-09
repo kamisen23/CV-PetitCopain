@@ -1,0 +1,148 @@
+/* Réinitialisation et typographie */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif; /* Texte courant */
+    color: #2d1b1b; /* Marron sombre pour contraste */
+    background-color: #a30d0d7e; /* Beige doux comme base */
+    background-image: url('imagefleurs.jpg'); /* Image haute couture */
+    background-size: cover;
+    background-position: center;
+    line-height: 1.6;
+}
+
+/* Hero Banner */
+.hero {
+    height: 200px;
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+.hero-content {
+    display: flex;
+    align-items: center; /* Alignement vertical */
+    gap: 20px; /* Espacement entre photo et texte */
+}
+
+.profile-pic {
+    width: 120px; /* Réduit pour mieux s’aligner */
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #e6c992;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Texte du hero */
+.hero-text {
+    text-align: left; /* Alignement à gauche pour un look moderne */
+}
+
+.hero-text h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4em; /* Légèrement réduit pour l’harmonie */
+    color: #e6c992;
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 1.7em;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 5px 0 0;
+}
+
+/* Bouton stylé */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #800020; /* Rouge bordeaux */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #b30033; /* Bordeaux plus clair */
+    transform: scale(1.05);
+}
+
+/* Conteneur principal */
+main {
+    max-width: 800px; /* Largeur réduite et centrée */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Sections alternées */
+section {
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+.dark {
+    background-color: #1a1a1a; /* Noir profond */
+    color: #f7d9d9; /* Rose poudré pour texte */
+}
+
+.light {
+    background-color: #f5e9e2; /* Beige doux */
+    color: #b30033;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #e6c992; /* Or champagne */
+}
+
+/* Liste des compétences */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    position: relative;
+    padding-left: 20px;
+}
+
+ul li:before {
+    content: "✧"; /* Étoile subtile */
+    color: #800020; /* Rouge bordeaux */
+    position: absolute;
+    left: 0;
+}
+
+/* Effets de survol sur sections */
+section:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+    main {
+        padding: 10px;
+    }
+    section {
+        margin: 10px 0;
+    }
+}
